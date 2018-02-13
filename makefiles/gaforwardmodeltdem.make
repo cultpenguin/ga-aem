@@ -8,7 +8,7 @@ srcdir     = ../src
 tntdir     = ../third_party/tnt
 objdir     = ./obj
 includes   = -I$(srcdir) -I$(tntdir)
-libs       = -L$(FFTW_DIR) -lfftw3
+libs       = -L$(FFTW_DIR) -lfftw -lfftw3
 executable = $(exedir)/gaforwardmodeltdem.exe
 
 all: compile link

@@ -9,7 +9,7 @@ srcdir     = ../src
 tntdir     = ../third_party/tnt
 objdir     = ./obj
 includes   = -I$(srcdir) -I$(tntdir)
-libs       = -L$(FFTW_DIR) -lfftw3 -fopenmp
+libs       = -L$(FFTW_DIR) -lfftw -lfftw3 -fopenmp
 executable = $(exedir)/galeisbstdem.exe
 
 all: compile link

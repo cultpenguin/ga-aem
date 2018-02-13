@@ -12,7 +12,7 @@ srcdir     = ../src
 tntdir     = ../third_party/tnt
 objdir     = ./obj
 includes   = -I$(srcdir) -I$(tntdir)
-libs       = -L$(FFTW_DIR) -lfftw3
+libs       = -L$(FFTW_DIR) -lfftw -lfftw3
 library    = $(bindir)/gatdaem1d.so
 
 all: compile link
