@@ -1,4 +1,4 @@
-function R = gatdaem1d_forwardmodel(hS,G,E)
+edit vtr    function R = gatdaem1d_forwardmodel(hS,G,E)
 
 nlayers=length(E.conductivity);
 if(nlayers ~= 1+length(E.thickness))
