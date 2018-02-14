@@ -1,10 +1,14 @@
 #!/bin/sh
 
-#Script to load compiler modules and dependent software 
+# On Ubuntu
+sudo apt-get install build-essential
+sudo apt-get install libfftw3-dev
+sudo apt-get install libopenmpi-dev
 
+
+#Script to load compiler modules and dependent software 
 #module load openmpi/1.6.3
 #module load fftw3/3.3.3
-
 #GNU compiler on raijin.nci.org.au
 #module load gcc/5.2.0
 export cxx=g++
@@ -25,4 +29,3 @@ make -f garjmcmctdem.make allclean
 make -f gatdaem1d_python.make allclean
 make -f gatdaem1d_matlab.make allclean
 
-sudo apt-get install libfftw3-dev
