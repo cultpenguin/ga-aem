@@ -17,6 +17,7 @@ def load_library():
     else:
         ext = '.so'
     libname = os.path.join(os.path.dirname(os.path.realpath(__file__)),"gatdaem1d"+ext)
+    print(libname)
     lib = ctypes.CDLL(libname)
     return lib;
 
@@ -175,7 +176,7 @@ class TDAEMSystem:
 
     def __del__(self):
         """Delete the handle to free up internal resources"""
-        tdlib.deletehandle(self.handle);
+        #tdlib.deletehandle(self.handle);
         
     def waveform_windows_plot(self,fig):
         ax1 = fig.add_subplot(1,1,1);
